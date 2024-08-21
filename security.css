@@ -1,0 +1,205 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+    color: #f5f5f5;
+    overflow-x: hidden;
+}
+body {
+    background-image: url('https://thumbs.dreamstime.com/b/cyberattack-concept-faceless-hooded-male-person-using-tablet-computer-low-key-red-blue-lit-image-digital-glitch-effect-133406130.jpg	'); /* Replace with your actual image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* If you want to set a background image for a specific section */
+#hero {
+    background-image: url('https://www.risk-strategies.com/hubfs/Imported%20sitepage%20images/272-article-img-1.jpg'); /* Replace with your actual image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #121212;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header .logo {
+    font-size: 24px;
+    color: #00bcd4;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #00bcd4;
+}
+
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 150px 0;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#hero .btn {
+    padding: 12px 30px;
+    background-color: #00bcd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#hero .btn:hover {
+    background-color: #008c9e;
+}
+
+section {
+    padding: 60px 0;
+    position: relative;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    animation: slideIn 1s ease-in-out;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#best-practices .practice {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    margin: 20px 0;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#best-practices .practice:hover {
+    transform: scale(1.05);
+    background-color: #373737;
+}
+
+#best-practices .icon {
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #2c2c2c;
+    border: 1px solid #00bcd4;
+    color: white;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #008c9e;
+}
+
+#contact-form button {
+    margin-top: 20px;
+    padding: 14px;
+    width: 100%;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #008c9e;
+}
+
+footer {
+    background-color: #121212;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    color: #757575;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}

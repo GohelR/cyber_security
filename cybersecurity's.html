@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Essentials</title>
+    <link rel="stylesheet" href="security.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- AOS for scroll animations -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Cybersecurity Essentials</h1>
+            <nav>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#best-practices">Best Practices</a></li>
+                    <li><a href="#threats">Common Threats</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2 data-aos="fade-up">Protect Your Digital Life</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Your guide to staying safe online with the latest cybersecurity tips and best practices.</p>
+            <a href="#introduction" class="btn" data-aos="fade-up" data-aos-delay="200">Learn More</a>
+        </div>
+    </section>
+
+    <section id="introduction">
+        <div class="container">
+            <h2 data-aos="fade-right">Introduction to Cybersecurity</h2>
+            <p data-aos="fade-right" data-aos-delay="100">Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These attacks are usually aimed at accessing, changing, or destroying sensitive information.</p>
+            <img src="https://cdn.digitalisationworld.com/uploads/images/cb996bb93245250ccf3873f08bcaf6da28ee09ca3b143b98.jpg" alt="Cybersecurity Image" data-aos="fade-left" data-aos-delay="200" class="responsive-image">
+        </div>
+    </section>
+
+    <section id="best-practices">
+        <div class="container">
+            <h2 data-aos="fade-right">Best Practices</h2>
+            <div class="practice" data-aos="flip-left">
+                <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/1000/1000955.png" alt="Password Icon"></div>
+                <h3>Strong Passwords</h3>
+                <p>Use complex passwords with a mix of letters, numbers, and symbols.</p>
+            </div>
+            <div class="practice" data-aos="flip-left" data-aos-delay="100">
+                <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/2983/2983460.png" alt="2FA Icon"></div>
+                <h3>Enable 2FA</h3>
+                <p>Enable two-factor authentication for an extra layer of security.</p>
+            </div>
+            <div class="practice" data-aos="flip-left" data-aos-delay="200">
+                <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/2565/2565414.png" alt="Update Icon"></div>
+                <h3>Regular Updates</h3>
+                <p>Keep your software and devices updated to protect against vulnerabilities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="threats">
+        <div class="container">
+            <h2 data-aos="fade-right">Common Threats</h2>
+            <div class="threat" data-aos="fade-up">
+                <h3>Phishing</h3>
+                <p>Phishing is a method used by cybercriminals to trick people into giving out sensitive information by pretending to be a trustworthy entity.</p>
+            </div>
+            <div class="threat" data-aos="fade-up" data-aos-delay="100">
+                <h3>Malware</h3>
+                <p>Malware is software designed to cause damage to a computer, server, client, or computer network.</p>
+            </div>
+            <div class="threat" data-aos="fade-up" data-aos-delay="200">
+                <h3>Ransomware</h3>
+                <p>Ransomware is a type of malware that threatens to publish the victim's data or block access to it unless a ransom is paid.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 data-aos="fade-right">Contact Us</h2>
+            <form id="contact-form" data-aos="fade-up">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+             <p>© 2024 Cybersecurity Essentials. All rights reserved. Designed and developed by [Ravi Gohel].</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!-- AOS library -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you! Your message has been sent.');
+        });
+    </script>
+</body>
+</html>
+
+<!--
+  Copyright 2024 Ravi Gohel N.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+
